@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <link rel="stylesheet" type="text/css" href="./Site.css" />
+
+    <script src="./index.js"></script>
+
+    <!-- Here you can change your favicon icon -->
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Font-Awesome-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="  https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--Loader Gif Script-->
+    <script>
+        $(window).on('load', function () {
+            setTimeout(removeLoader, 100);
+        });
+
+        function removeLoader() {
+            $(".loader").fadeOut(500, function () {
+                $(".loader").remove();
+            });
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+    <div class="loader"> </div>
+    <div class="container-fluid">
+
+        <div class="row" id="home">
+
+            <header style="padding: 0;">
+                <div class="navclass mb-0">
+                    <div id="particles-js">
+                    </div>
+                </div>
+                <div class="text-center">
+
+                    <!-- 3-LINE-MENU  -->
+
+                </div>
+                <div class="text-center">
+                    <input type="checkbox" id="ham-menu">
+                    <label for="ham-menu">
+                        <div class="hide-des">
+
+                            <img src="./images/line.png" id="sidenav_button" onclick="changeImage()" alt="1"
+                                class="icon">
+
+                        </div>
+
+                    </label>
+                    <div class="full-page-green"></div>
+                    <div class="ham-menu">
+                        <ul class="bold-text menu-text " style="color: #ffffff; ">
+
+
+                            <a href="#home" onclick="closeNav()">Home
+                                <br><br></a>
+                            <a href="#aboutme" onclick="closeNav()">About Me<br><br></a>
+                            <a href="#skills" onclick="closeNav()">Skills<br><br></a>
+                            <a href="#academics" onclick="closeNav()">Academics<br><br></a>
+                            <a href="#achievements" onclick="closeNav()">Achievements<br><br></a>
+                            <a href="#contact-me" onclick="closeNav()">Contact
+                                Me<br><br></a>
+
+                        </ul>
+                    </div>
+
+                    <!-- Here you can change your profile photo -->
+
+                    <img class="pic " src="./images/pic.png" alt="Profile pic">
+
+
+                </div>
+
+            </header>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="nameBG">
+
+                <h1 class="name mt-0"><br>Your Name</h1>
+                <h3 class="programmer">Your Qualification</h3>
+            </div>
+
+        </div>
+
+
+        <!-- Social Media Icon -->
+
+        <div class="row">
+
+            <nav style="padding:0">
+
+                <div class="gradient-border text-center social-icon" id="animation">
+
+                    <!-- Instagram -->
+                    <a href="#Paste here your Instagram link" target="_blank"><img class='ig' type="image"
+                            onclick="oninsta()" src="./images/ig1.png" alt="Insta Img"></a>
+
+                    <!-- Linkdin -->
+                    <a href="#Paste here your Instagram link" target="_blank"><img class='ln' type="image"
+                            onclick="onlinkdin()" src="./images/ln.png" alt="Linkdin Img"></a>
+
+                    <!-- E-mail -->
+                    <a href="#Paste here your E-mail id" target="_blank"> <img class='mail' type="image"
+                            onclick="onmail()" src="./images/E-mail.png" alt="Mail Img"> </a>
+
+                    <!-- Whatsapp (Enter your whatsapp number in href blankline) -->
+
+                    <a href="http://wa.me/+91__________?text=Hi" target="_blank"><img class='wp' type="image"
+                            onclick="onwp()" src="./images/wp.png" alt="Whatsaapp Img"> </a>
+
+                    <!-- Twitter -->
+
+                    <a href="#Paste here your Twitter id" target="_blank"><img class='twitter' type="image"
+                            src="./images/twitter.png" alt="twitter Img"> </a>
+
+
+                </div>
+            </nav>
+        </div>
+
+        <!-- Info(E-mail,Number,Location) -->
+
+        <div class="row text-center E-mail-line" style="margin-top: 2px; background-image: url(./images/dark1.jpg);">
+
+            <div class=" col-md-4 " style="margin-bottom: 5px;">
+                <p class="E-mail">Email ID &nbsp; <i class="far fa-envelope"></i></p>
+
+                <a href="mailto: {Enter Your E-mail id}" target="_blank" class="E-mail-id">
+                    <p>{Your E-mail id}</p>
+                </a>
+            </div>
+
+            <div class="col-md-4 ">
+                <p class="E-mail ">Contact Number &nbsp; <i class="fas fa-mobile-alt"></i></p>
+                <a href="tel:{Enter Your Contact Number}" target="_blank" class="E-mail-id ">
+                    <p>+91-{Your Contact Number}</p>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <p class="E-mail">Location &nbsp;<i class="fas fa-map-marker-alt"></i></p>
+                <a href="#Enter your google map location link" target="_blank" class="E-mail-id ">
+                    <p>Location Name</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="row">
+
+            <div class="about-section" ;>
+
+
+                <h2 class="aboutmetext" id="aboutme" style="color:#ffffff; ;">About Me &nbsp; <i
+                        class="far fa-user"></i><br>
+                </h2>
+
+
+
+                <p>
+                    <br>
+                    Here you can write about yourself! <br>
+                    For Example: Secure a responsible career opportunity to fully utilize my training and skills, while
+                    making a significant contribution to the success of the company. etc....etc...
+                    <br><br>
+                </p>
+
+
+                <!-- About Me(Languages,Dob,Nationality) -->
+                <div class="row text-center ">
+
+                    <div class="col-md-4 bug">
+                        <h2 class="languages">LANGUAGES &nbsp;<i class="fas fa-language"></i>
+                        </h2>
+
+                        <h4 class="ans">Add your Languages here
+                        </h4>
+
+                    </div>
+
+
+                    <div class="col-md-4 bug">
+                        <h2 class="languages">DATE OF BIRTH &nbsp;<i class="fas fa-birthday-cake"></i>
+                        </h2>
+
+                        <h4 class="ans">
+                            dd/mm/yyyy
+                        </h4>
+                    </div>
+
+
+                    <div class="col-md-4 bug">
+                        <h2 class="languages">NATIONALITY &nbsp; <i class="far fa-flag"></i>
+                        </h2>
+
+                        <h4 class="ans">
+                            Your Nationality</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!---------------------------------------------SKILLS ---------------------------------------->
+
+
+
+        <div class="row skills Skills-border" id="skills">
+
+            <div class="col-md-12 " style="margin-bottom: 35px;">
+
+                <h1 class="Skills m-2">SKILLS &nbsp; <i class="fas fa-brain"></i><br></h1>
+
+
+
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+
+
+                        <div class="card" style="background-color:rgb(33, 33, 33);">
+
+                            <!-- According to Your Skill-type, you can chaneg image here -->
+                            <img src="./images/code.png" alt="code" class="img-fluid  mx-auto d-block">
+                            <div>
+                                <h2 style=" color: #bb86fc;">
+                                    Skill 1
+                                </h2>
+
+
+                                <p class="cardfirst">
+                                    About your skills<br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 bugimg">
+
+
+                        <div class="card" style="background-color:rgb(33, 33, 33);">
+                            <!-- According to Your Skill-type, you can chaneg image here -->
+                            <img class="web img-fluid  mx-auto d-block" src="./images/html1.png" alt="web" class="p-2">
+                            <div>
+                                <h2 style="color: #bb86fc;">Skill 2</h2>
+
+                                <p class="cardsecond">
+                                    About your skills<br>
+
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4 bugimg">
+                        <div class="card" style="background-color:rgb(33, 33, 33)" ;>
+                            <!-- According to Your Skill-type, you can chaneg image here -->
+                            <img class="android img-fluid mx-auto d-block" src="./images/android.png" alt="John">
+
+                            <div>
+                                <h2 style="color: #bb86fc;">Skill 3 </h2>
+
+                                <p class="cardthird">
+                                    About your skills<br>
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--------------------------ACADEMICS ----------------------->
+
+        <div class="row contenteditable academics-in " id="academics">
+            <div class="col-md-12  ">
+
+                <h1 class="Skills m-2 academics">ACADEMICS &nbsp;<i class="fas fa-university"></i><br></h1>
+            </div>
+
+            <div class="row text-center">
+
+
+                <div class="col-md-4 border">
+
+                    <p class="big text-white font-weight-light"><br>Year<br><br></p>
+                    <h3 class="academics-titles border" style="color: #e5ebfe;">University
+                        Name<br><br>
+                    </h3>
+
+                    <h5 class="academics-titles-in" style="color: #ffb84d;"><br><br>Currently pursuing .....
+                    </h5>
+                    <span class="big  font-weight-normal" style="color: #ffb84d;"><br><br> At....{Your College Name}
+                        <br><br></span>
+
+
+                </div>
+                <div class="col-md-4 border">
+
+
+                    <p class="big text-white font-weight-light"><br>Year<br><br></p>
+                    <h3 class="academics-titles border" style="color: #e5ebfe;">
+                        Board <br> Name
+                    </h3>
+
+
+                    <h5 class="academics-titles-in " style="color: #ffb84d;"><br><br>Cleared HSC Examination At...
+                        {School Name}
+                    </h5>
+                    <span class="big font-weight-normal" style="color: #ffb84d;"><br>Institute Location<br><br></span>
+                </div>
+
+                <div class="col-md-4 border">
+                    <p class="big text-white font-weight-light"><br>Year<br><br></p>
+                    <h3 class="academics-titles  border" style="color: #e5ebfe">
+                        Board <br> Name
+                    </h3>
+
+
+
+                    <h5 class="academics-titles-in" style="color: #ffb84d;"><br><br>Cleared SSC Examination At
+                        ....{School Name}</h5>
+                    <span class="big font-weight-normal" style="color: #ffb84d;"><br>Institute Location<br></span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------- ACHIEVEMENTS  ----------------------------------------->
+        <div class="row achievements-border" style="background-image: url(./images/dark1.jpg);" id="achievements">
+
+
+            <div class="col-md-9">
+
+                <div class="col-md-12">
+                    <p class="big achievements-title text-center"><br>ACHIEVEMENTS &nbsp; <i class="fas fa-ribbon"></i>
+                    </p>
+
+                    <div class="col-md-12 text-white">
+                        <li>Achievement 1
+                        </li>
+                        <br>
+                        <li style="color: #ffb84d;">Achievement 2 </li> <br>
+                        <li>Achievement 3</li><br>
+                        <li style="color: #ffb84d;">Achievement 4</li>
+                        <br>
+                        <li>Achievement 5</li> </br>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-3 text-center achievements-title">
+
+                <h3><br>Memories</h3>
+                <br>
+                <!--PHOTOES-->
+
+                <!-- Here you can edit your photos  -->
+                <div id="carouselExampleIndicators" class="carousel slide " data-bs-interval="false"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <!-- Img 1 -->
+                            <img src="./images/1.jpg" class="d-block w-100 ">
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Img 2 -->
+                            <img src="./images/2.jpg" class="d-block w-100 ">
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Img 3 -->
+                            <img src="./images/3.jpg" class="d-block w-100 ">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <br>
+            </div>
+
+        </div>
+
+        <!---------------------------------------------------CONTACT ME ------------------------------------------------>
+        <div class="row contactme-bg" id="contact-me">
+
+            <div class="col-md-8  ">
+
+                <h2 class="contactme-title "> Contact Me &nbsp; <i class="fas fa-id-card-alt"></i></h2>
+
+
+                <form method="post" onsubmit="return ressubmit(event)" action="#!" id="form">
+
+                    <table>
+
+                        <tr>
+                            <th><label for="name"> Name : </label></th>
+                            <td> <input type="text" autocomplete="off" autocomplete="off" height=100px id="name"
+                                    name="name" placeholder="Enter your Name..." required>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <th><label for="email"> Email : </label> </th>
+                            <td><input type="email" autocomplete="off" id="email" name="email"
+                                    placeholder="Enter your Email ID..." required></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="phone"> Number : </label> </th>
+                            <td><input type="tel" autocomplete="off" id="phone" name="phone"
+                                    placeholder="Enter your Phone no..."></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="message"> Message : </label> </th>
+                            <td><textarea id="message" autocomplete="off" name="message"
+                                    placeholder="Enter Message..."></textarea></td>
+                        </tr>
+
+                    </table>
+
+                    <div class="buttons">
+                        <input type="submit" value="Submit" name="submit">
+                        <input type="reset" value="Reset" name="reset">
+
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-md-4  contactme-right">
+
+                <h1><br>Address &nbsp;<i class="fas fa-map-marker-alt"></i> </h1>
+
+                <h5> <a class="contactme-links" href="#Enter your location link">
+                        Your Address</a></h5>
+
+                <h1><br>E-mail &nbsp;<i class="far fa-envelope"></i></h1>
+
+                <h5> <a class="contactme-links" href="mailto:{Enter your email-id}/">
+                        E-mail id</a></h5>
+
+                <h1><br>Call &nbsp;<i class="fas fa-phone-volume"></i> </h1>
+
+                <h5> <a class="contactme-links" href="tel:{Your Phone Number}">
+                        +91- {Your Phone Number}</a></h5>
+
+
+
+            </div>
+
+        </div>
+
+
+        <!------------------------------------------- Footer -------------------------------------->
+        <div class="row text-center ">
+
+            <footer class="ft social-icon">
+
+                <p class="text-secondary mb-0"> Follow Me </p>
+
+                <div style="height: 30px;">
+                    <!-- Instagram -->
+                    <a href="#Enter your instagram id link" target="_blank"><img class='ig m-2' type="image"
+                            onclick="oninsta()" src="./images/ig1.png" alt="Insta Img"></a>
+
+                    <!-- Twitter -->
+                    <a href="#Enter your twitter link" target="_blank"><img class='twitter m-2' type="image"
+                            src="./images/twitter.png" alt="twitter Img"></a>
+
+                    <!-- Linkdin -->
+                    <a href="#Enter your linkdin link" target="_blank"><img class='ln m-2' type="image"
+                            onclick="onlinkdin()" src="./images/ln.png" alt="Linkdin Img"></a>
+
+                </div>
+                <p class="text-secondary ft-copyright  small">&copy; All rights reserved by ....</p>
+            </footer>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+
+
+</html>
