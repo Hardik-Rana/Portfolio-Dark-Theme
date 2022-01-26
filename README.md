@@ -1,2 +1,2 @@
-# Portfolio-Dark_Theme
-Personal portfolio website template with dark theme using HTML, CSS and JavaScript.
+Hi there, This is Hardik Rana. I made this portfolio design using Html,Css,Javascript and Particle js library. You can reference this design to make your portfolio website and can use the same to make yours too.
+If you are a beginner then you can go through all the files and learn about different components of the website. I have added comments in HTML file which can be helpful to you for making your website more relevant to your visitor.
